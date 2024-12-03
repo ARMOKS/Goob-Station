@@ -5,7 +5,7 @@
   description: A chalky white crystal, its cold to the touch.
   components:
     - type: Sprite
-      sprite: _Goobstation\alchemy\alchemy.rsi
+      sprite: _Goobstation/Objects/Misc/alchemy.rsi
       state: albedo
     - type: Item
       size: Small
@@ -23,9 +23,9 @@
   components:
     - type: EmitSoundOnLand
       sound:
-        path: _Goobstation\alchemy\crystal 1.ogg
+        path: /Audio/_Goobstation/Items/Alchemy/crystal1.ogg
     - type: Sprite
-      sprite: _Goobstation\alchemy\alchemy.rsi
+      sprite: _Goobstation/Objects/Misc/alchemy.rsi
       state: citrinitas
     - type: Item
       size: Small
