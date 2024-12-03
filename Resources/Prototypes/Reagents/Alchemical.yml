@@ -28,4 +28,4 @@
       - !type:HealthChange
         damage:
           types:
-            Cellular: 1
+            Burn: 2

@@ -1,0 +1,24 @@
+- type: reaction
+  id: AlchemicalPrecursor
+  reactants:
+    Plasma:
+      amount: 2
+    Artifexium:
+      amount: 1
+    Zinc:
+      amount: 2
+  products:
+    AlchemicalPrecursor: 5
+
+- type: reaction
+  id: Nigredo
+  reactants:
+    AlchemicalPrecursor:
+      amount: 1
+      catalyst: true
+    Ash:
+      amount: 5
+    Phlogiston:
+      amount: 1
+  products:
+    Nigredo: 5
