@@ -1,0 +1,31 @@
+- type: reagent
+  id: AlchemicalPrecursor
+  name: reagent-name-ALCP
+  group: alchemical
+  desc: reagent-desc-ALCP
+  flavor: cold
+  color: "#d1d0cf"
+  physicalDesc: reagent-physical-desc-gloopy
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cellular: 1
+
+- type: reagent
+  id: Nigredo
+  name: reagent-name-Nigredo
+  group: alchemical
+  desc: reagent-desc-Nigredo
+  flavor: terrible
+  color: "#292827"
+  physicalDesc: reagent-physical-desc-powdery
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cellular: 1
