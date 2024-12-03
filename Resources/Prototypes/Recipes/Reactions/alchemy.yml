@@ -22,3 +22,90 @@
       amount: 1
   products:
     Nigredo: 5
+
+- type: reaction
+  id: BrassSheet
+  impact: Low
+  quantized: true
+  minTemp: 374
+  reactants:
+    Iron:
+      amount: 9
+    Nigredo:
+      amount: 1
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: SheetBrass1
+
+- type: reaction
+  id: UraniumSheet
+  impact: Low
+  quantized: true
+  minTemp: 374
+  reactants:
+    Plasma:
+      amount: 10
+    Radium:
+      amount: 1
+    Nigredo:
+      amount: 1
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: SheetUranium1
+
+- type: reaction
+  id: Zinc
+  minTemp: 374
+  reactants:
+    Nigredo:
+      amount: 1
+    Lead:
+      amount: 25
+  products:
+    Zinc: 25
+
+- type: reaction
+  id: Lead
+  minTemp: 374
+  reactants:
+    Nigredo:
+      amount: 1
+    Zinc:
+      amount: 25
+  products:
+    Lead: 25
+
+- type: reaction
+  id: Copper
+  reactants:
+    Nigredo:
+      amount: 1
+    Aluminium:
+      amount: 25
+  products:
+    Copper: 25
+
+- type: reaction
+  id: Aluminium
+  reactants:
+    Nigredo:
+      amount: 1
+    Copper:
+      amount: 25
+  products:
+    Aluminium: 25
+
+- type: reaction
+  id: Albedo
+  reactants:
+    Silver:
+      amount: 10
+    Lead:
+      amount: 10
+    Fat:
+      amount: 10
+    Nigredo:
+      amount: 1
+      catalyst: true
+  products:
+    Albedo: 5

@@ -28,4 +28,20 @@
       - !type:HealthChange
         damage:
           types:
-            Burn: 2
+             Heat: 2
+
+- type: reagent
+  id: Albedo
+  name: reagent-name-Albedo
+  group: alchemical
+  desc: reagent-desc-Albedo
+  flavor: chalky
+  color: "#ffffff"
+  physicalDesc: reagent-physical-desc-powdery
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+             Caustic: 3
