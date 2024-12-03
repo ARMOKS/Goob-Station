@@ -62,15 +62,6 @@
     Ash: 1
 
 - type: reaction
-  id: Ash
-  minTemp: 520
-  reactants:
-    Nigredo:
-      amount: 1
-  products:
-    Ash: 1
-
-- type: reaction
   id: WeldingFuelBreakdown
   source: true
   requiredMixerCategories:
@@ -82,3 +73,4 @@
     Ethanol: 5
     Hydrogen: 3
     Sulfur: 2
+

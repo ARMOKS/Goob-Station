@@ -138,10 +138,8 @@
     solutions:
       brass:
         reagents:
-        - ReagentId: Zinc
-          Quantity: 3.3
-        - ReagentId: Copper
-          Quantity: 6.7
+        - ReagentId: Brass ## Changed to work with alchemy, needs to be brass when ground.
+          Quantity: 10
 
 - type: entity
   parent: SheetBrass

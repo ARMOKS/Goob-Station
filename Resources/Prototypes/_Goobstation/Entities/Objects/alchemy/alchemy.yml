@@ -1,0 +1,36 @@
+- type: entity
+  parent: BaseItem
+  id: albedoSolid
+  name: albedo
+  description: A chalky white crystal, its cold to the touch.
+  components:
+    - type: Sprite
+      sprite: _Goobstation\alchemy\alchemy.rsi
+      state: albedo
+    - type: Item
+      size: Small
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: albedo
+          Quantity: 5
+
+- type: entity
+  parent: BaseItem
+  id: citrinitasSolid
+  name: citrinitas
+  description: A blazing crystal, it is almost too hot to hold.
+  components:
+    - type: EmitSoundOnLand
+      sound:
+        path: _Goobstation\alchemy\crystal 1.ogg
+    - type: Sprite
+      sprite: _Goobstation\alchemy\alchemy.rsi
+      state: citrinitas
+    - type: Item
+      size: Small
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: citrinitas
+          Quantity: 5

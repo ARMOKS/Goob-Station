@@ -32,6 +32,12 @@
     tags:
     - Ore
     - Ingot
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: bluespacesssence
+        Quantity: 1
+
 
 - type: entity
   parent: MaterialBSCrystal

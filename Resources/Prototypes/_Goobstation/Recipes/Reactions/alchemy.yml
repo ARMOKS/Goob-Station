@@ -1,0 +1,214 @@
+- type: reaction
+  id: AlchemicalPrecursor
+  reactants:
+    Plasma:
+      amount: 2
+    bluespacesssence:
+      amount: 1
+    Zinc:
+      amount: 2
+  products:
+    AlchemicalPrecursor: 5
+
+- type: reaction
+  id: tenebrisCreation
+  reactants:
+    AlchemicalPrecursor:
+      amount: 1
+      catalyst: true
+    Ash:
+      amount: 5
+    Phlogiston:
+      amount: 1
+  products:
+    tenebris: 5
+
+- type: reaction
+  id: tenebrisGrowth
+  reactants:
+    tenebris:
+      amount: 1
+      catalyst: true
+    Oil:
+      amount: 1
+  products:
+    tenebris: 1
+
+- type: reaction
+  id: BrassSheet
+  impact: Low
+  quantized: true
+  minTemp: 374
+  reactants:
+    Iron:
+      amount: 9
+    Carbon:
+      amount: 1
+    tenebris:
+      amount: 1
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: SheetBrass1
+
+- type: reaction
+  id: UraniumSheet
+  impact: Low
+  quantized: true
+  minTemp: 374
+  reactants:
+    Plasma:
+      amount: 10
+    Radium:
+      amount: 1
+    tenebris:
+      amount: 1
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: SheetUranium1
+
+- type: reaction
+  id: Zinc
+  minTemp: 374
+  reactants:
+    tenebris:
+      amount: 1
+    Lead:
+      amount: 25
+  products:
+    Zinc: 25
+
+- type: reaction
+  id: Lead
+  minTemp: 374
+  reactants:
+    tenebris:
+      amount: 1
+    Zinc:
+      amount: 25
+  products:
+    Lead: 25
+
+- type: reaction
+  id: Copper
+  reactants:
+    tenebris:
+      amount: 1
+    Aluminium:
+      amount: 25
+  products:
+    Copper: 25
+
+- type: reaction
+  id: Aluminium
+  reactants:
+    tenebris:
+      amount: 1
+    Copper:
+      amount: 25
+  products:
+    Aluminium: 25
+
+- type: reaction
+  id: albedoCreation
+  reactants:
+    Silver:
+      amount: 10
+    Lead:
+      amount: 10
+    Fat:
+      amount: 10
+    tenebris:
+      amount: 70
+  products:
+    albedo: 5
+
+- type: reaction
+  id: brass
+  minTemp: 940
+  reactants:
+    Zinc:
+      amount: 1
+    Copper:
+      amount: 2
+  products:
+    brass: 3
+
+- type: reaction
+  id: IngotSilver1
+  impact: Low
+  quantized: true
+  minTemp: 374
+  reactants:
+    Iron:
+      amount: 9
+    Carbon:
+      amount: 1
+    albedo:
+      amount: 1
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: IngotSilver1
+
+- type: reaction
+  id: IngotGold1
+  impact: Low
+  quantized: true
+  minTemp: 374
+  reactants:
+    brass:
+      amount: 10
+    albedo:
+      amount: 1
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: IngotGold1
+
+- type: reaction
+  id: MaterialDiamond1
+  impact: Low
+  quantized: true
+  minTemp: 374
+  reactants:
+    Carbon:
+      amount: 98
+    albedo:
+      amount: 1
+    tenebris:
+      amount: 1
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: MaterialDiamond1
+
+- type: reaction
+  id: Creation
+  reactants:
+    empoweredlead:
+      amount: 30
+    kingsyellow:
+      amount: 12
+    Omnizine:
+      amount: 10
+    albedo:
+      amount: 48
+  products:
+    citrinitas: 5
+
+- type: reaction
+  id: empoweredlead
+  reactants:
+    Lead:
+      amount: 1
+    Uranium:
+      amount: 1
+  products:
+    empoweredlead: 2
+
+- type: reaction
+  id: kingsyellow
+  reactants:
+    Silver:
+      amount: 50
+    Gold:
+      amount: 50
+  products:
+    kingsyellow: 1
