@@ -68,7 +68,7 @@
     heavyStaminaCost: 10 # goob edit
     damage:
       types:
-        Blunt: 12
+        Blunt: 8
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
   - type: Tag
@@ -198,6 +198,11 @@
     state: icon
   - type: Item
     sprite: Objects/Tools/Toolboxes/toolbox_gold.rsi
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 12
 
 - type: entity
   id: ToolboxThief

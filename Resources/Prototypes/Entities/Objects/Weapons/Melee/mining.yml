@@ -103,9 +103,9 @@
   - type: IncreaseDamageOnWield
     damage:
       groups:
-        Brute: 10
+        Brute: 5 #goob
       types:
-        Structural: 30
+        Structural: 40 #goob
   - type: Item
     size: Normal
     shape:

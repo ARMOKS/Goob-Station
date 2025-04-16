@@ -107,17 +107,22 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 12
+        Piercing: 5 #Gooob
     angle: 0
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.8 # goob edit
+    sprintModifier: 0.8 # goob edit
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 15
+        Piercing: 15 #goob
   - type: Item
     size: Large # goobstation
+    shape:
+      - 0,0,7,0
   - type: Clothing
     quickEquip: false
     slots:
@@ -146,7 +151,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 4
+        Piercing: 5 #Goob
   # Goobstation - nuh uh
   #- type: Damageable
   #  damageContainer: Inorganic

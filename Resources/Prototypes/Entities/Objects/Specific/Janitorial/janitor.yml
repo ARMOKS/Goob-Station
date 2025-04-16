@@ -152,7 +152,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 10
+        Blunt: 5
     soundHit:
       collection: MetalThud
   - type: Spillable
@@ -161,7 +161,10 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 5
+        Blunt: 8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.8 # goob edit
+    sprintModifier: 0.8 # goob edit
   - type: Item
     size: Large
     sprite: Objects/Specific/Janitorial/mop.rsi
